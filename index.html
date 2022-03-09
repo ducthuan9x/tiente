@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="a">
+<select id="b">
+    <option value="vnd";>việt nam</option>
+    <option value="usd";>mỹ</option>
+</select>
+<select name="" id="d">
+    <option value="vnd">việt nam</option>
+    <option value="usd">mỹ</option>
+</select>
+<button onclick="e()">ấn đi</button>
+<script>
+    function e() {
+   let i= document.getElementById('a').value;
+   let thuan= document.getElementById('b').value;
+   let tho= document.getElementById('d').value;
+   if ('thuan'=='tho'){
+       alert(i);
+   }
+   if (thuan =="vnd"&& tho =="usd"){
+       alert(i/23000);
+   }
+   if (thuan =="usd" && tho == "vnd"){
+       alert(i*23000)
+   }
+    }
+</script>
+</body>
+</html>
