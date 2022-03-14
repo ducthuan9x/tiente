@@ -7,26 +7,196 @@
 <body>
 <h1 id="thuan"></h1>
 <script>
-    let a=parseInt(prompt('nhập số a'));
-    if(a<2){
-        document.write('không có số nguyên tố');
-    } else if(a==2){
-        document.write(' số nguyên tố a' +a);
-    } else if(a>2){
-        if(a%2==0) {
-            document.write(' không phải số nguyên tố ');
+    document.write('********************* <br/>');
+    for(let i=1;i<=6;i++) {
+        for (j = 1; j <= 21; j += 21) {
+            document.write('*');
         }
-        for(let i=3;i< (a-1);i+=2){
-            if(a % i==0){
-            document.write('không phải số nguyên tố');
-            } else {
-            document.write('số nguyên tố a' + a);
-            }
-            document.write('số nguyên tố a <br/>' + a);
-        }
+        document.write('<br/>');
     }
+    // for(let i=6;i>=1;i--) {
+    //     for (j = 1; j <= 21; j += 21) {
+    //         document.write('*');
+    //     }
+    //     document.write('<br/>');
+    // }
+
+    document.write('********************* <br/>');
 
 
+
+
+
+    // for(let a=1;a<=5;a++){
+    //     for(let b=1; b<=a;b++){
+    //         document.write('*');
+    //     }
+    //     document.write('<br/>');
+    // }
+    // for(let a=5;a>=1;a--){
+    //     for(let b=1;b<=a;b++){
+    //         document.write('*');
+    //     }
+    //     document.write('<br/>');
+    // }
+
+
+
+
+
+    // for(let a=5;a>=1;a--){
+    //     for(let b=1;b<=a;b++){
+    //         document.write('*');
+    //     }
+    //     document.write('<br/>');
+    // }
+
+
+
+
+   // for(let a=1;a<=5;a++){
+   //     for(let b=1; b<=a;b++){
+   //         document.write('*');
+   //     }
+   //     document.write('<br/>');
+   // }
+
+
+
+
+    // let a=prompt('nhập số a');
+    // let giaithua=1;
+    // for(let i=1;i<=a;i++){
+    //     giaithua=giaithua*i;
+    // }
+    // document.write('giaithua= <br/>' +giaithua);
+
+
+
+
+
+    // for(let i=0;i<=100;i++){
+    //     if(i%3==0 && i%5==0){
+    //         document.write('FizzBuzz <br/>');
+    //     } else if(i%3==0){
+    //         document.write('Fizz <br/>');
+    //     } else if(i%5==0){
+    //         document.write('buzz <br/>');
+    //     }
+    // }
+    //
+
+
+
+    // let n1=0;
+    // let n2=1;
+    // let a=1;
+    // for(count=1;;) {
+    //     for (i = 1; i <= 20; i++) {
+    //         a = n1 + n2;
+    //         n1 = n2;
+    //         n2 = a;
+    //     }
+    //     sum=n1+n2-1;
+    //     console.log(sum);
+    //     break;
+    // }
+
+
+
+
+    // let n = parseInt(prompt('nhập số n'));
+    // let n1 = 1;
+    // let n2 = 1;
+    // let a = 1;
+    // document.write('fibonacci:');
+    // for (i = 1; i <= n; i++) {
+    //     if (n1 % 5 == 0) {
+    //         document.write(n1 + '</br>');
+    //         break;
+    //     }
+    //     a = n1 + n2;
+    //     n1 = n2;
+    //     n2 = a;
+    // }
+
+
+    // let a=prompt('nhập a');
+    // let count;
+    // for(let i=2;i<=a;i++){
+    //     for(count=2;count<i;count++) {
+    //         if (i % count == 0) {
+    //             document.write(i+ 'không phải số nguyên tố  <br/>')
+    //             break;
+    //         }
+    //     }
+    //         if(count==i){
+    //             document.write(i+ 'là số nguyên tố <br/>');
+    //     }
+    // }
+
+
+    // let a=prompt('nhập số a');
+    // let check="số nguyên tố";
+    // for(let i=2;i<a;i++) {
+    //     if (a % i == 0) {
+    //         document.write('không phải số nguyên tố');
+    //         break;
+    //     }
+    //     document.write(check + "<br/>");
+    // }
+
+
+    // let n=parseInt(prompt('nhập số n'));
+    // let n1=0;
+    // let n2=1;
+    // let a=1;
+    // document.write('fibonacci:');
+    // for(i=0;i<=n;i++){
+    //     document.write(n1 + '</br>');
+    //     a=n1+n2;
+    //     n1=n2;
+    //     n2=a;
+    // }
+
+
+    // let a=parseInt(prompt('nhập nhiệt độ a'));
+    // if (a<20){
+    //     document.write('tăng nhiệt đê');
+    // } else if(a<=100){
+    //     document.write('nhiệt đọ hiện tại' +a);
+    // } else{
+    //     document.write('giảm nhiệt đê');
+    // }
+
+
+    // for(let i=0;i<100; i++){
+    //     document.write( +i+'số hiển thị');
+    //     document.write('<br/>');
+    // }
+
+
+    // let a=parseInt(prompt('nhập số a'));
+    // if(a<2){
+    //     document.write('không có số nguyên tố');
+    // } else if(a==2){
+    //     document.write(' số nguyên tố a' +a);
+    // } else if(a>2){
+    //     if(a%2==0) {
+    //         document.write(' không phải số nguyên tố ');
+    //         document.write('<br/>');
+    //     }
+    //     for(let i=3;i< (a-1);i+=2){
+    //         if(a % i==0){
+    //         document.write('không phải số nguyên tố');
+    //         document.write('<br/>');
+    //         } else {
+    //         document.write('số nguyên tố a' + a);
+    //         document.write('<br/>');
+    //         }
+    //         document.write('số nguyên tố a <br/>' + a);
+    //     }
+    // }
 
 
     // let bang;
@@ -42,7 +212,6 @@
     // document.write(bang);
 
 
-
     // let bang;
     // bang = "<table border='1' width='300' cellspacing='0' cellpadding='3'>"
     // for (i = 1; i <= 10; i++) {
@@ -54,9 +223,6 @@
     // }
     // bang = bang + "</table>";
     // document.write(bang);
-
-
-
 
 
     // let x = 1;
@@ -75,8 +241,6 @@
     //
 
 
-
-
     // let i=1
     // do{
     //     document.write('giá trị' +i);
@@ -85,17 +249,11 @@
     // while (i<=10);
 
 
-
-
-
-
     // let i=1;
     // while (i<100){
     //     document.write("<hr widgh=" +i +"%>");
     //     i++;
     // }
-
-
 
 
     // let a=parseInt(prompt('nhập a'));
@@ -112,9 +270,6 @@
     // }
 
 
-
-
-
     // let a=parseInt(prompt('nhập số a'));
     // let sum =0;
     // sum=sum+a;
@@ -125,10 +280,6 @@
     // alert('sum=' +sum);
 
 
-
-
-
-
     // let a=parseInt(prompt(' nhập số a'));
     // let s=(a*(a+1))/2
     // for (let i=1; i<=a; i++ ){
@@ -137,19 +288,16 @@
     // }
 
 
-
-
     // for ( let i = 0; i < 5; i++) {
     //     document.write("the number is"  + i);
     // }
 
 
-
-  //   for (let i=0;i<=100;i++){
-  //     if (i %3 ==0){
-  //         document.getElementById('thuan').innerHTML=('i=' +i);
-  //     }
-  // }
+    //   for (let i=0;i<=100;i++){
+    //     if (i %3 ==0){
+    //         document.getElementById('thuan').innerHTML=('i=' +i);
+    //     }
+    // }
 </script>
 </body>
 </html>
