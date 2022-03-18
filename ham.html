@@ -1,10 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+
+<!--<form>-->
+<!--    <p>-->
+<!--        <label>Fahrenheit</label>-->
+<!--        <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"-->
+<!--               oninput="temperatureConverter(this.value)"-->
+<!--               onchange="temperatureConverter(this.value)">-->
+<!--    </p>-->
+<!--    <p>Celsius: <span id="outputCelsius"></span></p>-->
+<!--</form>-->
+
+
+<script>
+    // kiểm tra số nguyên tố
+    let a=prompt('nhập số a');
+    let flag=true;
+    function kiemtra(a) {
+        if (a<2){
+            flag=flese;
+        } else if(a==2){
+           flag=true;
+        }else  if(a>2){
+            for(i=3;i<n;i++){
+                if(a%i==0){
+                    flag=flese;
+                }else {
+                    flag=true;
+                }
+            }
+        }
+        if( flag=true){
+       kiemtra(a)=
+        }
+
+    }
+
+        
+
+    
+
+
+
+
+
+//    function temperatureConverter(valNum) {
+//        valNum = parseFloat(valNum);
+//        document.getElementById("outputCelsius").innerHTML = (valNum-32) / 1.8;
+//    }
+
+
+    // function processConfirm(answer) {
+    //     let result = "";
+    //     if (answer) {
+    //         result = "Excellent. We'll play a nice game of chess.";
+    //     } else {
+    //         result = "Maybe later then.";
+    //     }
+    //     return result;
+    // }
+    //
+    // let confirmAnswer = confirm("Shall we play a game?");
+    // let theAnswer = processConfirm(confirmAnswer);
+    // alert(theAnswer);
+
+</script>
 </body>
 </html>
