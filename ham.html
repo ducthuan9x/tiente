@@ -15,32 +15,245 @@
 <!--    </p>-->
 <!--    <p>Celsius: <span id="outputCelsius"></span></p>-->
 <!--</form>-->
-
-
+<!--<input type="text" id="nhap">-->
+<!--<h1 id="thuan"></h1>-->
+<!--<button onclick="hh()">ấn</button>-->
 <script>
+    // // bài kiểm tra chuỗi đối xứng
+    // let chuoi="abcddcba";
+    // let check='giống';
+    // for(i=0;i<chuoi.length;i++){
+    //     if(chuoi[i]!=chuoi[chuoi.length-1-i]){
+    //         check="ko giống";
+    //     }
+    // } document.write(check);
+
+
+
+
+    // bài9
+    // let a= prompt('nhập ký tự');
+    // let b= prompt('nhập b');
+    // function ktra(b) {
+    //     mangkt=a.split(",");
+    //     let dem=0;
+    //     for(i=0;i<mangkt.length;i++){
+    //         if(mangkt[i]==b){
+    //             dem++
+    //         }
+    //     } return dem;
+    // }document.write(ktra(b))
+
+
+
+
+    // bài 8
+    // let a=prompt('nhập chuỗ');
+    // function daomang(a) {
+    //     mang=a.split(",");
+    //     mang.reverse();
+    //   return mang;
+    // }document.write(daomang(a))
+
+
+
+    // bài7
+    // function doicho(a,b) {
+    //     return b+','+a
+    // }document.write(doicho(11,3))
+
+
+
+
+    // nhập 3 số nguyên .tìm số nhỏ nhất
+
+    // function nhap3so(a,b,c) {
+    //     let min=a;
+    //     if(b<a && b<c){
+    //         min=b;
+    //     }
+    //     if(c<a && c<b){
+    //         min=c;
+    //     }
+    //     return min
+    // } console.log(nhap3so(3,-2,1));
+
+
+
+
+
+    // // kiẻm tra ký tự nhập vào
+    //
+    // let lk=document.getElementById('thuan');
+    // let th=document.getElementById('nhap');
+    //
+    // function hh(){
+    //     let kk=+th.value;
+    //     let lk2=kytu(kk);
+    //     lk.innerHTML=lk2;
+    // }
+    // function kytu(a) {
+    //     if(a%1==0){
+    //         document.write('true')
+    //     }else{
+    //         document.write('false')
+    //     }
+    // }
+
+
+
+
+
+
+
+
+
+
+    // tính giai thừa
+
+
+    //
+    // let lk=document.getElementById('thuan');
+    // let th=document.getElementById('nhap');
+    //
+    // function hh(){
+    //     let kk=+th.value;
+    //     let lk2=giaithua(kk);
+    //     lk.innerHTML=lk2;
+    // }
+    // function giaithua(a) {
+    //     let s=1;
+    //     for(i=1;i<=a;i++){
+    //         s=s*i;
+    //
+    //     } return (s)
+    // }
+
+
+
+
+
+    // // dịn tích  hình tròn
+    // let lk=document.getElementById('thuan');
+    // let th=document.getElementById('nhap');
+    //
+    // function hh(){
+    //     let kk=+th.value;
+    //     let lk2=hinhtron(kk);
+    //     lk.innerHTML=lk2;
+    // }
+    // function hinhtron(r) {
+    //     let dtich = 3.14 * r * r;
+    //     return (dtich);
+    // }
+
+
+
+    // tính bình phương
+    // function binhphuong(a) {
+    //     let s=a*a;
+    //     return(s);
+    // } alert(binhphuong(6))
+    //
+
+
+
+
+    // let mang1=['Polaris','Aldebaran','Deneb','Vega','Altair','Dubhe','Regulus'];
+    // let mang2=['UrsaMinor','Tarurus','Cygnus','Lyra','Aquila','UrsaMajor','leo'];
+    // let a=prompt('nhập gì');
+    // let check=mang1.indexOf(a);
+    // if (check==-1){
+    //     document.write('ko có chòm sao này');
+    // } else{
+    //     document.write(mang2[check]);
+    // }
+
+
+
+    // ####
+    //
+    // function addNumbers() {
+    //     firstNum = 4;
+    //     secondNum = 8;
+    //     result = firstNum + secondNum;
+    //     return result;
+    // }
+    // result = 0;
+    // result = alert(addNumbers());
+
+
+
+
+    // ### hàm số a và b
+    // function tong(a,b) {
+    //     if(a<b){
+    //        s= a+b;
+    //         return s;
+    //     } else{
+    //         document.write('ko đùa đâu')
+    //     }
+    // }
+    // document.write(tong(11,8))
+
+
+
+    // // gọi hàm đổi số
+
+    // function doiso(a) {
+    //     return a+=1
+    // }  alert(doiso(3))
+    //
+
+
+
+
+
+    // chuyển đổi foot-met
+
+    // function lketfoot(meter) {
+    //     return  foot = 3.279 * meter;
+    // }
+    // function lketmet(foot) {
+    //     return  meter = 0.305 * foot
+    // }
+    // console.log(lketfoot(5))
+    // console.log(lketmet(2) )
+
+
+
     // kiểm tra số nguyên tố
-    let a=prompt('nhập số a');
-    let flag=true;
-    function kiemtra(a) {
-        if (a<2){
-            flag=flese;
-        } else if(a==2){
-           flag=true;
-        }else  if(a>2){
-            for(i=3;i<n;i++){
-                if(a%i==0){
-                    flag=flese;
-                }else {
-                    flag=true;
-                }
-            }
-        }
-        if( flag=true){
-       kiemtra(a)=
-        }
+    // let flag=true;
+    // function kiemtra(a) {
+    //     if (a < 2) {
+    //         flag = flese;
+    //     } else if (a == 2) {
+    //         flag = true;
+    //     } else if (a > 2) {
+    //         for (i = 3; i < a-1; i++) {
+    //             if (a % i == 0) {
+    //                 flag = flese;
+    //             }
+    //         }
+    //     }
+    //     if (flag == true) {
+    //         console.log(a + 'là số nguyên tố')
+    //     }else {
+    //         console.log(a + 'là ko số nguyên tố')
+    //     }
+    // }
+    // kiemtra(a)
 
-    }
-
+    // cách 1
+    // let a=prompt('nhập số a');
+    // let check="số nguyên tố";
+    // for(let i=2;i<a;i++) {
+    //     if (a % i == 0) {
+    //         document.write('không phải số nguyên tố');
+    //         break;
+    //     }
+    //     document.write(check + "<br/>");
+    // }
         
 
     
