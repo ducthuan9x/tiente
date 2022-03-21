@@ -5,25 +5,25 @@
     <title>Title</title>
 </head>
 <body>
+<script>
 
 
 
 
 
-
-    // let Vongtron = function(bankinh) {
-    //     this.Bankinh = bankinh;
-    //     this.getBankinh = function () {
-    //         return bankinh;
-    //     }
-    //     this.getDientich = function () {
-    //         return Math.PI * bankinh * bankinh;
-    //     }
-    // }
-    // let vongtron=new Vongtron(2);
-    // let bankinh=vongtron.getBankinh(2);
-    // let dientich=vongtron.getDientich();
-    // console.log('bankinh:'+bankinh+';dientich:' +dientich);
+    let Vongtron = function(bankinh) {
+        this.Bankinh = bankinh;
+        this.getBankinh = function () {
+            return bankinh;
+        }
+        this.getDientich = function () {
+            return Math.PI * bankinh * bankinh;
+        }
+    }
+    let vongtron=new Vongtron(2);
+    let bankinh=vongtron.getBankinh();
+    let dientich=vongtron.getDientich();
+    console.log('bankinh:'+bankinh+';dientich:' +dientich);
 </script>
 </body>
 </html>

@@ -15,9 +15,9 @@
 <!--    </p>-->
 <!--    <p>Celsius: <span id="outputCelsius"></span></p>-->
 <!--</form>-->
-<!--<input type="text" id="nhap">-->
-<!--<h1 id="thuan"></h1>-->
-<!--<button onclick="hh()">ấn</button>-->
+<input type="text" id="nhap">
+<h1 id="thuan"></h1>
+<button onclick="hh()">ấn</button>
 <script>
     // // bài kiểm tra chuỗi đối xứng
     // let chuoi="abcddcba";
@@ -134,19 +134,19 @@
 
 
 
-    // // dịn tích  hình tròn
-    // let lk=document.getElementById('thuan');
-    // let th=document.getElementById('nhap');
-    //
-    // function hh(){
-    //     let kk=+th.value;
-    //     let lk2=hinhtron(kk);
-    //     lk.innerHTML=lk2;
-    // }
-    // function hinhtron(r) {
-    //     let dtich = 3.14 * r * r;
-    //     return (dtich);
-    // }
+    // dịn tích  hình tròn
+    let lk=document.getElementById('thuan');
+    let th=document.getElementById('nhap');
+
+    function hh(){
+        let kk=+th.value;
+        let lk2=hinhtron(kk);
+        lk.innerHTML=lk2;
+    }
+    function hinhtron(r) {
+        let dtich = 3.14 * r * r;
+        return (dtich);
+    }
 
 
 
