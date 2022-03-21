@@ -14,15 +14,18 @@
         this.radius = radius;
     }
 
-    function createCircle() {
-        let ctx = document.getElementById("myCanvas").getContext("2d");
-        let circle = new Circle(300, 300, 80);
-        ctx.fillStyle = 'red';
-        ctx.beginPath();
-        ctx.arc(circle.x, circle.y, circle.radius, 0, 2 * Math.PI);
-        ctx.fill();
-    }
-    createCircle();
+    // function createCircle() {
+    //     let ctx = document.getElementById("myCanvas").getContext("2d");
+    //     let x=Math.random()*100;
+    //     let y=Math.random()*100;
+    //     let radius=Math.random()*100;
+    //     let circle = new Circle(x, y, radius);
+    //     ctx.fillStyle = 'red';
+    //     ctx.beginPath();
+    //     ctx.arc(circle.x, circle.y, circle.radius, 0, 2 * Math.PI);
+    //     ctx.fill();
+    // }
+    // createCircle();
     function Circle(x, y, radius) {
         this.x = x;
         this.y = y;
@@ -59,7 +62,6 @@
             createCircle();
         }
     }
-
     createMultipleCircle();
 
 </script>

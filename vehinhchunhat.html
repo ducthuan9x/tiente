@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="hinhcn" width="1300" height="800" style="border:1px solid mediumblue ;"></canvas>
+<script>
+    function hinhcnn(a,b) {
+        this.a=a;
+        this.b=b;
+    }
+
+    // function getRandomHex(){
+    //     return Math.floor(Math.random()*555);
+    // }
+    //
+    // function getRandomColor(){
+    //     let red = getRandomHex();
+    //     let green = getRandomHex();
+    //     let blue = getRandomHex();
+    //     return "rgb(" + red + "," + blue + "," + green +")";
+    // }
+    function vehinhcn() {
+        let xyz=document.getElementById("hinhcn").getContext("2d");
+        // let a=Math.random()*100;
+        // let b=Math.random()*100;
+        let hinh=new hinhcnn(500,300);
+        xyz.fillStyle= "rgb(255,0,0)";
+        xyz.fillRect(300,300,hinh.a,hinh.b);
+        xyz.beginPath();
+       xyz.fillStyle   = "yellow";
+       xyz.moveTo(550,380);
+       xyz.lineTo(500,500);
+        xyz.lineTo(620,425);
+        xyz.lineTo(480,425);
+        xyz.lineTo(600,500);
+        xyz.lineTo(550,380);
+        xyz.fill();
+    } vehinhcn()
+
+</script>
+</body>
+</html>
